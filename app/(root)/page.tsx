@@ -1,13 +1,12 @@
 import { UserButton } from "@clerk/nextjs";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <p>
-        <UserButton afterSignOutUrl="/" />
-      </p>
-      home
-    </main>
+    <div className="w-full h-screen ">
+      <UserButton afterSignOutUrl="/" />
+      <div>
+        <p>Home</p>
+      </div>
+    </div>
   );
 }
